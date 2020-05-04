@@ -1,0 +1,1065 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20201.20.0326.1623                               -->
+<workbook source-build='2020.1.2 (20201.20.0326.1623)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <MapboxVectorStylesAndLayers />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='P1-UK-Bank-Customers' inline='true' name='federated.1b0t71i1i91emu1765lml0sg6wd8' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='P1-UK-Bank-Customers' name='textscan.1qwa9vk12mxt9i1atfj8e1pegp8f'>
+            <connection class='textscan' directory='C:/Users/N M Shihab Islam/Downloads' filename='P1-UK-Bank-Customers.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1qwa9vk12mxt9i1atfj8e1pegp8f' name='P1-UK-Bank-Customers.csv' table='[P1-UK-Bank-Customers#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='Customer ID' ordinal='0' />
+            <column datatype='string' name='Name' ordinal='1' />
+            <column datatype='string' name='Surname' ordinal='2' />
+            <column datatype='string' name='Gender' ordinal='3' />
+            <column datatype='integer' name='Age' ordinal='4' />
+            <column datatype='string' name='Region' ordinal='5' />
+            <column datatype='string' name='Job Classification' ordinal='6' />
+            <column datatype='string' name='Date Joined' ordinal='7' />
+            <column datatype='real' name='Balance' ordinal='8' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[P1-UK-Bank-Customers.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Customer ID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Customer ID]</local-name>
+            <parent-name>[P1-UK-Bank-Customers.csv]</parent-name>
+            <remote-alias>Customer ID</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Name]</local-name>
+            <parent-name>[P1-UK-Bank-Customers.csv]</parent-name>
+            <remote-alias>Name</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Surname</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Surname]</local-name>
+            <parent-name>[P1-UK-Bank-Customers.csv]</parent-name>
+            <remote-alias>Surname</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Gender</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Gender]</local-name>
+            <parent-name>[P1-UK-Bank-Customers.csv]</parent-name>
+            <remote-alias>Gender</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Age</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Age]</local-name>
+            <parent-name>[P1-UK-Bank-Customers.csv]</parent-name>
+            <remote-alias>Age</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Region</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Region]</local-name>
+            <parent-name>[P1-UK-Bank-Customers.csv]</parent-name>
+            <remote-alias>Region</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Job Classification</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Job Classification]</local-name>
+            <parent-name>[P1-UK-Bank-Customers.csv]</parent-name>
+            <remote-alias>Job Classification</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date Joined</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Date Joined]</local-name>
+            <parent-name>[P1-UK-Bank-Customers.csv]</parent-name>
+            <remote-alias>Date Joined</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Balance</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Balance]</local-name>
+            <parent-name>[P1-UK-Bank-Customers.csv]</parent-name>
+            <remote-alias>Balance</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column aggregation='None' caption='Age (bin)' datatype='integer' name='[Age (bin)]' role='dimension' type='ordinal'>
+        <calculation class='bin' decimals='0' formula='[Age]' peg='0' size-parameter='[Parameters].[Parameter 2]' />
+      </column>
+      <column datatype='integer' name='[Age]' role='measure' type='quantitative' />
+      <column aggregation='None' caption='Balance (bin)' datatype='integer' name='[Balance (bin)]' role='dimension' type='ordinal'>
+        <calculation class='bin' decimals='4' formula='[Balance]' peg='0' size-parameter='[Parameters].[Parameter 1]' />
+      </column>
+      <column datatype='real' name='[Balance]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Customer ID]' role='dimension' type='ordinal' />
+      <column datatype='string' name='[Gender]' role='dimension' type='nominal' />
+      <column datatype='string' name='[Job Classification]' role='dimension' type='nominal' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column datatype='string' name='[Region]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column-instance column='[Gender]' derivation='None' name='[none:Gender:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Job Classification]' derivation='None' name='[none:Job Classification:nk]' pivot='key' type='nominal' />
+      <group caption='Action (Age (bin))' hidden='true' name='[Action (Age (bin))]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Age (bin)]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (Balance (bin))' hidden='true' name='[Action (Balance (bin))]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Balance (bin)]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (Gender)' hidden='true' name='[Action (Gender)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Gender]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (Job Classification)' hidden='true' name='[Action (Job Classification)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Job Classification]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (Region)' hidden='true' name='[Action (Region)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Region]' />
+        </groupfilter>
+      </group>
+      <layout dim-ordering='alphabetic' dim-percentage='0.417582' measure-ordering='alphabetic' measure-percentage='0.331868' parameter-percentage='0.250549' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Gender:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Male&quot;</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>&quot;Female&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Job Classification:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Blue Collar&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Other&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;White Collar&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United Kingdom&quot;' />
+        <semantic-value key='[State].[Name]' value='%null%' />
+      </semantic-values>
+      <datasource-dependencies datasource='Parameters'>
+        <column caption='Balance Groups' datatype='integer' name='[Parameter 1]' param-domain-type='range' role='measure' type='quantitative' value='15000'>
+          <calculation class='tableau' formula='15000' />
+          <range granularity='5000' max='25000' min='5000' />
+        </column>
+        <column caption='Age Groups' datatype='integer' name='[Parameter 2]' param-domain-type='list' role='measure' type='quantitative' value='5'>
+          <calculation class='tableau' formula='5' />
+        </column>
+      </datasource-dependencies>
+    </datasource>
+    <datasource hasconnection='false' inline='true' name='Parameters' version='18.1'>
+      <aliases enabled='yes' />
+      <column caption='Balance Groups' datatype='integer' name='[Parameter 1]' param-domain-type='range' role='measure' type='quantitative' value='15000'>
+        <calculation class='tableau' formula='15000' />
+        <range granularity='5000' max='25000' min='5000' />
+      </column>
+      <column caption='Age Groups' datatype='integer' name='[Parameter 2]' param-domain-type='list' role='measure' type='quantitative' value='5'>
+        <calculation class='tableau' formula='5' />
+        <members>
+          <member value='2' />
+          <member value='5' />
+          <member value='10' />
+        </members>
+      </column>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <actions>
+    <action caption='Filter1' name='[Action1]'>
+      <source dashboard='Dashboard 1' type='sheet' worksheet='Map' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 1' />
+      </command>
+    </action>
+    <action caption='Filter 1 (generated)' name='[Action2]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 1' type='sheet' worksheet='Map' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 1' />
+      </command>
+    </action>
+    <action caption='Filter 3 (generated)' name='[Action4]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 1' type='sheet' worksheet='Distribution by balance' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 1' />
+      </command>
+    </action>
+    <action caption='Filter 4 (generated)' name='[Action5]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 1' type='sheet' worksheet='Gender ' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 1' />
+      </command>
+    </action>
+    <action caption='Filter 5 (generated)' name='[Action6]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 1' type='sheet' worksheet='Job Classification' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 1' />
+      </command>
+    </action>
+    <action caption='Highlight 1 (generated)' name='[Action7]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 1' type='sheet' />
+      <command command='tsc:brush'>
+        <param name='field-captions' value='Region' />
+        <param name='target' value='Dashboard 1' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='Age Dristibution'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='P1-UK-Bank-Customers' name='federated.1b0t71i1i91emu1765lml0sg6wd8' />
+            <datasource name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column caption='Age Groups' datatype='integer' name='[Parameter 2]' param-domain-type='list' role='measure' type='quantitative' value='5'>
+              <calculation class='tableau' formula='5' />
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.1b0t71i1i91emu1765lml0sg6wd8'>
+            <column aggregation='None' caption='Age (bin)' datatype='integer' name='[Age (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='0' formula='[Age]' peg='0' size-parameter='[Parameters].[Parameter 2]' />
+            </column>
+            <column datatype='integer' name='[Age]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Gender]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Job Classification]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+              <calculation class='tableau' formula='1' />
+            </column>
+            <column datatype='string' name='[Region]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[Age (bin)]' derivation='None' name='[none:Age (bin):ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Number of Records]' derivation='Sum' name='[pcto:sum:Number of Records:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+            <column-instance column='[Number of Records]' derivation='Sum' name='[sum:Number of Records:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1b0t71i1i91emu1765lml0sg6wd8].[Action (Gender)]'>
+            <groupfilter function='level-members' level='[Gender]' user:ui-action-filter='[Action5]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1b0t71i1i91emu1765lml0sg6wd8].[Action (Job Classification)]'>
+            <groupfilter function='level-members' level='[Job Classification]' user:ui-action-filter='[Action6]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1b0t71i1i91emu1765lml0sg6wd8].[Action (Region)]'>
+            <groupfilter function='level-members' level='[Region]' user:ui-action-filter='[Action2]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='quantitative' column='[federated.1b0t71i1i91emu1765lml0sg6wd8].[pcto:sum:Number of Records:qk]' included-values='non-null' />
+          <slices>
+            <column>[federated.1b0t71i1i91emu1765lml0sg6wd8].[pcto:sum:Number of Records:qk]</column>
+            <column>[federated.1b0t71i1i91emu1765lml0sg6wd8].[Action (Region)]</column>
+            <column>[federated.1b0t71i1i91emu1765lml0sg6wd8].[Action (Gender)]</column>
+            <column>[federated.1b0t71i1i91emu1765lml0sg6wd8].[Action (Job Classification)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='height' field='[federated.1b0t71i1i91emu1765lml0sg6wd8].[none:Age (bin):ok]' value='41' />
+            <format attr='title' class='0' field='[federated.1b0t71i1i91emu1765lml0sg6wd8].[pcto:sum:Number of Records:qk]' scope='rows' value='% of Customers' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.1b0t71i1i91emu1765lml0sg6wd8].[none:Age (bin):ok]' value='16' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-size' field='[federated.1b0t71i1i91emu1765lml0sg6wd8].[pcto:sum:Number of Records:qk]' value='12' />
+            <format attr='font-weight' field='[federated.1b0t71i1i91emu1765lml0sg6wd8].[pcto:sum:Number of Records:qk]' value='bold' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.1b0t71i1i91emu1765lml0sg6wd8].[sum:Number of Records:qk]' palette='green_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.1b0t71i1i91emu1765lml0sg6wd8].[sum:Number of Records:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.4832596778869629' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1b0t71i1i91emu1765lml0sg6wd8].[pcto:sum:Number of Records:qk]</rows>
+        <cols>[federated.1b0t71i1i91emu1765lml0sg6wd8].[none:Age (bin):ok]</cols>
+        <show-full-range>
+          <column>[federated.1b0t71i1i91emu1765lml0sg6wd8].[Age (bin)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{46000EE7-BAEA-4442-A41D-5E5A4EE36882}' />
+    </worksheet>
+    <worksheet name='Distribution by balance'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='P1-UK-Bank-Customers' name='federated.1b0t71i1i91emu1765lml0sg6wd8' />
+            <datasource name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column caption='Balance Groups' datatype='integer' name='[Parameter 1]' param-domain-type='range' role='measure' type='quantitative' value='15000'>
+              <calculation class='tableau' formula='15000' />
+              <range granularity='5000' max='25000' min='5000' />
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.1b0t71i1i91emu1765lml0sg6wd8'>
+            <column aggregation='None' caption='Balance (bin)' datatype='integer' name='[Balance (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='4' formula='[Balance]' peg='0' size-parameter='[Parameters].[Parameter 1]' />
+            </column>
+            <column datatype='real' name='[Balance]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Gender]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Job Classification]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+              <calculation class='tableau' formula='1' />
+            </column>
+            <column datatype='string' name='[Region]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[Balance (bin)]' derivation='None' name='[none:Balance (bin):ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Number of Records]' derivation='Sum' name='[pcto:sum:Number of Records:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+            <column-instance column='[Number of Records]' derivation='Sum' name='[sum:Number of Records:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1b0t71i1i91emu1765lml0sg6wd8].[Action (Gender)]'>
+            <groupfilter function='level-members' level='[Gender]' user:ui-action-filter='[Action5]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1b0t71i1i91emu1765lml0sg6wd8].[Action (Job Classification)]'>
+            <groupfilter function='level-members' level='[Job Classification]' user:ui-action-filter='[Action6]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1b0t71i1i91emu1765lml0sg6wd8].[Action (Region)]'>
+            <groupfilter function='level-members' level='[Region]' user:ui-action-filter='[Action2]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1b0t71i1i91emu1765lml0sg6wd8].[Action (Region)]</column>
+            <column>[federated.1b0t71i1i91emu1765lml0sg6wd8].[Action (Gender)]</column>
+            <column>[federated.1b0t71i1i91emu1765lml0sg6wd8].[Action (Job Classification)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='height' field='[federated.1b0t71i1i91emu1765lml0sg6wd8].[none:Balance (bin):ok]' value='224' />
+            <format attr='title' class='0' field='[federated.1b0t71i1i91emu1765lml0sg6wd8].[pcto:sum:Number of Records:qk]' scope='rows' value='% of Customers ' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.1b0t71i1i91emu1765lml0sg6wd8].[none:Balance (bin):ok]' value='13' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-weight' field='[federated.1b0t71i1i91emu1765lml0sg6wd8].[pcto:sum:Number of Records:qk]' value='bold' />
+            <format attr='font-size' field='[federated.1b0t71i1i91emu1765lml0sg6wd8].[pcto:sum:Number of Records:qk]' value='12' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1b0t71i1i91emu1765lml0sg6wd8].[sum:Number of Records:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='234' />
+                <format attr='maxwidth' value='234' />
+                <format attr='minheight' value='183' />
+                <format attr='maxheight' value='183' />
+                <format attr='aspect' value='0' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1b0t71i1i91emu1765lml0sg6wd8].[pcto:sum:Number of Records:qk]</rows>
+        <cols>[federated.1b0t71i1i91emu1765lml0sg6wd8].[none:Balance (bin):ok]</cols>
+      </table>
+      <simple-id uuid='{36CE116B-C5C1-484D-AD0E-BFF6800E08C1}' />
+    </worksheet>
+    <worksheet name='Gender '>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='P1-UK-Bank-Customers' name='federated.1b0t71i1i91emu1765lml0sg6wd8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1b0t71i1i91emu1765lml0sg6wd8'>
+            <column datatype='string' name='[Gender]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Job Classification]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+              <calculation class='tableau' formula='1' />
+            </column>
+            <column datatype='string' name='[Region]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[Gender]' derivation='None' name='[none:Gender:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Number of Records]' derivation='Sum' name='[pcto:sum:Number of Records:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+            <column-instance column='[Number of Records]' derivation='Sum' name='[sum:Number of Records:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1b0t71i1i91emu1765lml0sg6wd8].[Action (Job Classification)]'>
+            <groupfilter function='level-members' level='[Job Classification]' user:ui-action-filter='[Action6]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1b0t71i1i91emu1765lml0sg6wd8].[Action (Region)]'>
+            <groupfilter function='level-members' level='[Region]' user:ui-action-filter='[Action2]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1b0t71i1i91emu1765lml0sg6wd8].[Action (Region)]</column>
+            <column>[federated.1b0t71i1i91emu1765lml0sg6wd8].[Action (Job Classification)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' value='241' />
+            <format attr='height' value='252' />
+            <format attr='text-format' field='[federated.1b0t71i1i91emu1765lml0sg6wd8].[pcto:sum:Number of Records:qk]' value='p0%' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.1b0t71i1i91emu1765lml0sg6wd8].[none:Gender:nk]' />
+              <wedge-size column='[federated.1b0t71i1i91emu1765lml0sg6wd8].[sum:Number of Records:qk]' />
+              <text column='[federated.1b0t71i1i91emu1765lml0sg6wd8].[pcto:sum:Number of Records:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.62569057941436768' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{9DB536CB-77E2-4DA0-AE6E-3DF746D2F056}' />
+    </worksheet>
+    <worksheet name='Job Classification'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='P1-UK-Bank-Customers' name='federated.1b0t71i1i91emu1765lml0sg6wd8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1b0t71i1i91emu1765lml0sg6wd8'>
+            <column datatype='string' name='[Gender]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Job Classification]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+              <calculation class='tableau' formula='1' />
+            </column>
+            <column datatype='string' name='[Region]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[Job Classification]' derivation='None' name='[none:Job Classification:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Number of Records]' derivation='Sum' name='[sum:Number of Records:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1b0t71i1i91emu1765lml0sg6wd8].[Action (Gender)]'>
+            <groupfilter function='level-members' level='[Gender]' user:ui-action-filter='[Action5]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1b0t71i1i91emu1765lml0sg6wd8].[Action (Region)]'>
+            <groupfilter function='level-members' level='[Region]' user:ui-action-filter='[Action2]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1b0t71i1i91emu1765lml0sg6wd8].[Action (Region)]</column>
+            <column>[federated.1b0t71i1i91emu1765lml0sg6wd8].[Action (Gender)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' value='203' />
+            <format attr='height' value='150' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='on' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1b0t71i1i91emu1765lml0sg6wd8].[none:Job Classification:nk]' />
+              <size column='[federated.1b0t71i1i91emu1765lml0sg6wd8].[sum:Number of Records:qk]' />
+              <text column='[federated.1b0t71i1i91emu1765lml0sg6wd8].[none:Job Classification:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{AE23D814-9157-424D-9C7C-2CEFFB42081E}' />
+    </worksheet>
+    <worksheet name='Map'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='P1-UK-Bank-Customers' name='federated.1b0t71i1i91emu1765lml0sg6wd8' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.1b0t71i1i91emu1765lml0sg6wd8'>
+            <column datatype='string' name='[Gender]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Job Classification]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+              <calculation class='tableau' formula='1' />
+            </column>
+            <column datatype='string' name='[Region]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[Region]' derivation='None' name='[none:Region:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Number of Records]' derivation='Sum' name='[sum:Number of Records:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1b0t71i1i91emu1765lml0sg6wd8].[Action (Gender)]'>
+            <groupfilter function='level-members' level='[Gender]' user:ui-action-filter='[Action5]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1b0t71i1i91emu1765lml0sg6wd8].[Action (Job Classification)]'>
+            <groupfilter function='level-members' level='[Job Classification]' user:ui-action-filter='[Action6]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1b0t71i1i91emu1765lml0sg6wd8].[Action (Gender)]</column>
+            <column>[federated.1b0t71i1i91emu1765lml0sg6wd8].[Action (Job Classification)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='legend-title'>
+            <format attr='font-size' value='10' />
+            <format attr='font-weight' value='bold' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Multipolygon' />
+            <encodings>
+              <color column='[federated.1b0t71i1i91emu1765lml0sg6wd8].[none:Region:nk]' />
+              <text column='[federated.1b0t71i1i91emu1765lml0sg6wd8].[sum:Number of Records:qk]' />
+              <geometry column='[federated.1b0t71i1i91emu1765lml0sg6wd8].[Geometry (generated)]' />
+            </encodings>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-weight' value='bold' />
+                <format attr='font-size' value='10' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minheight' value='551' />
+                <format attr='maxheight' value='551' />
+                <format attr='minwidth' value='314' />
+                <format attr='maxwidth' value='314' />
+                <format attr='aspect' value='0' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1b0t71i1i91emu1765lml0sg6wd8].[Latitude (generated)]</rows>
+        <cols>[federated.1b0t71i1i91emu1765lml0sg6wd8].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{BAD95503-098F-4DD2-AD8D-43A8AD6AF247}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='Dashboard 1'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' preset-index='1' sizing-mode='fixed' />
+      <datasources>
+        <datasource name='Parameters' />
+      </datasources>
+      <datasource-dependencies datasource='Parameters'>
+        <column caption='Balance Groups' datatype='integer' name='[Parameter 1]' param-domain-type='range' role='measure' type='quantitative' value='15000'>
+          <calculation class='tableau' formula='15000' />
+          <range granularity='5000' max='25000' min='5000' />
+        </column>
+        <column caption='Age Groups' datatype='integer' name='[Parameter 2]' param-domain-type='list' role='measure' type='quantitative' value='5'>
+          <calculation class='tableau' formula='5' />
+          <members>
+            <member value='2' />
+            <member value='5' />
+            <member value='10' />
+          </members>
+        </column>
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='2' type='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='5' param='horz' type='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='98000' id='3' type='layout-basic' w='77100' x='800' y='1000'>
+              <zone h='98000' id='1' name='Map' w='31920' x='800' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='37498' id='18' name='Age Dristibution' w='45180' x='32720' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='60502' id='20' name='Distribution by balance' w='45180' x='32720' y='38498'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone fixed-size='213' h='98000' id='4' is-fixed='true' param='vert' type='layout-flow' w='21300' x='77900' y='1000'>
+              <zone fixed-size='100' h='13500' id='6' is-fixed='true' name='Map' pane-specification-id='0' param='[federated.1b0t71i1i91emu1765lml0sg6wd8].[none:Region:nk]' type='color' w='21300' x='77900' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone fixed-size='41' h='6125' id='9' is-fixed='true' mode='slider' param='[Parameters].[Parameter 2]' type='paramctrl' w='21300' x='77900' y='14500'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone fixed-size='148' h='19500' id='25' is-fixed='true' name='Gender ' w='21300' x='77900' y='20625'>
+                <layout-cache fixed-size-w='258' type-h='fixed' type-w='fixed' />
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone fixed-size='200' h='26000' id='33' is-fixed='true' name='Job Classification' w='21300' x='77900' y='40125'>
+                <layout-cache fixed-size-w='203' type-h='fixed' type-w='fixed' />
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone fixed-size='44' h='6500' id='17' is-fixed='true' mode='slider' param='[Parameters].[Parameter 1]' type='paramctrl' w='21300' x='77900' y='66125'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1450' minheight='1450' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='131' type='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='130' param='vert' type='layout-flow' w='98400' x='800' y='1000'>
+                <zone fixed-size='280' h='98000' id='1' is-fixed='true' name='Map' w='31920' x='800' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='100' h='13500' id='6' name='Map' pane-specification-id='0' param='[federated.1b0t71i1i91emu1765lml0sg6wd8].[none:Region:nk]' type='color' w='21300' x='77900' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='37498' id='18' is-fixed='true' name='Age Dristibution' w='45180' x='32720' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='41' h='6125' id='9' mode='slider' param='[Parameters].[Parameter 2]' type='paramctrl' w='21300' x='77900' y='14500'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='148' h='19500' id='25' is-fixed='true' name='Gender ' w='21300' x='77900' y='20625'>
+                  <layout-cache fixed-size-w='258' type-h='fixed' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='60502' id='20' is-fixed='true' name='Distribution by balance' w='45180' x='32720' y='38498'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='200' h='26000' id='33' is-fixed='true' name='Job Classification' w='21300' x='77900' y='40125'>
+                  <layout-cache fixed-size-w='203' type-h='fixed' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='44' h='6500' id='17' mode='slider' param='[Parameters].[Parameter 1]' type='paramctrl' w='21300' x='77900' y='66125'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{CC1434B9-E967-4C71-BFC4-9C25E2DE5645}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='Map'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card pane-specification-id='0' param='[federated.1b0t71i1i91emu1765lml0sg6wd8].[none:Region:nk]' type='color' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <default-map-tool-selection tool='4' />
+      </viewpoint>
+      <simple-id uuid='{9B888450-BB1F-4B4A-853B-DE137A61AA34}' />
+    </window>
+    <window class='worksheet' name='Gender '>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card pane-specification-id='0' param='[federated.1b0t71i1i91emu1765lml0sg6wd8].[none:Gender:nk]' type='color' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{BE9409A9-6132-414E-8923-F87389F228DC}' />
+    </window>
+    <window class='worksheet' name='Age Dristibution'>
+      <cards>
+        <edge name='left'>
+          <strip size='131'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card pane-specification-id='0' param='[federated.1b0t71i1i91emu1765lml0sg6wd8].[sum:Number of Records:qk]' type='color' />
+            <card mode='slider' param='[Parameters].[Parameter 2]' type='parameter' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{187D9ED1-5B65-43DB-BD84-CA8F05E894CB}' />
+    </window>
+    <window class='worksheet' name='Distribution by balance'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card pane-specification-id='0' param='[federated.1b0t71i1i91emu1765lml0sg6wd8].[sum:Number of Records:qk]' type='color' />
+            <card mode='slider' param='[Parameters].[Parameter 1]' type='parameter' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{46E0F517-6A76-4BED-844F-77E06A5E5172}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Job Classification'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card pane-specification-id='0' param='[federated.1b0t71i1i91emu1765lml0sg6wd8].[none:Job Classification:nk]' type='color' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{6E0DC6B0-F8A4-4FBA-9158-47879324D898}' />
+    </window>
+    <window class='dashboard' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Age Dristibution'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Distribution by balance'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Gender ' />
+        <viewpoint name='Job Classification' />
+        <viewpoint name='Map'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{971487F4-5393-46F4-9CEF-0595161B0EF6}' />
+    </window>
+  </windows>
+</workbook>
